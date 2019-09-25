@@ -1,0 +1,14 @@
+{% load static %}
+{% load socialaccount %}
+{% providers_media_js %}
+<html>
+    <head>
+        <title>Google Login</title>
+    </head>
+
+    <body>
+        <p color = "blue" ><center>Login with Google</center></p>
+        <p color = "blue" ><center>Click on the Icon</center></p>
+        <a href = "{% provider_login_url 'google' %}"><center><img height = "50" width="50" src = '{% static "img/google_logo.png" %}' alt = 'login with google'></center></a> 
+    </body>
+</html>
